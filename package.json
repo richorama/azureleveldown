@@ -1,0 +1,25 @@
+{
+  "name": "azureleveldown",
+  "description": "An implementation of LevelDown for Windows Azure Table Storage",
+  "version": "0.0.0",
+  "authors": [
+    "richard.astbury"
+  ],
+  "keywords": [
+    "leveldb",
+    "leveldown",
+    "levelup",
+    "azure"
+  ],
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richorama/azureleveldown.git"
+  },
+  "dependencies": {
+    "abstract-leveldown": "~0.11.2",
+    "azure": "~0.8.1",
+    "bops": "~0.1.1"
+  },
+  "license": "MIT"
+}
