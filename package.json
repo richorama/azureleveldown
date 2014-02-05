@@ -1,7 +1,7 @@
 {
   "name": "azureleveldown",
   "description": "An implementation of LevelDown for Windows Azure Table Storage",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "authors": [
     "richard.astbury"
   ],

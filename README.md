@@ -7,7 +7,7 @@ As of version 0.7, LevelUP allows you to pass a `'db'` option when you create a 
 ## Installation
 
 ```
-npm install azureleveldown 
+npm install azureleveldown levelup
 ```
 
 ## Example
@@ -16,7 +16,7 @@ npm install azureleveldown
 var connection = 'DefaultEndpointsProtocol=https;AccountName=xxx;AccountKey=yyy'
 
 var levelup = require('levelup');
-var LevelAzureDown = require('./index');
+var LevelAzureDown = require('azureleveldown');
 
 var db = levelup(connection, {
   // the 'db' option replaces LevelDOWN
@@ -25,12 +25,11 @@ var db = levelup(connection, {
   }
 })
 
-// An azureleveldown database works within a single table and partition. 
-// These can be controlled by passing some settings in the consuctor 
+// An azureleveldown db works within a single table and partition. 
+// These can be controlled by passing some settings into the contsuctor 
 
 
 var db = levelup(connection, {
-  // the 'db' option replaces LevelDOWN
   db: function (connection) { 
     return new LevelAzureDown(connection,  {table:"table1", partitionKey: "partition1"}) 
   }
@@ -55,7 +54,7 @@ db.readStream()
 
 * `reverse` read streams are not currently supported
 * Only text (utf8) keys and values are supported
-* The table storage limits for key and value sizes are observed (1KB / 64KB respectively)
+* The table storage limits for key and value sizes (1KB / 64KB respectively)
 
 ## Licence
 
