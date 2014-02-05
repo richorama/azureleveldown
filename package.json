@@ -21,5 +21,14 @@
     "azure": "~0.8.1",
     "bops": "~0.1.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richorama/azureleveldown/issues"
+  },
+  "homepage": "https://github.com/richorama/azureleveldown",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "richard.astbury"
 }
