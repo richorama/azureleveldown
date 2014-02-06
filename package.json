@@ -21,6 +21,11 @@
     "azure": "~0.8.1",
     "bops": "~0.1.1"
   },
+  "devDependencies": {
+    "tap": "*",
+    "sinon": "*",
+    "rimraf": "*"
+  },  
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/richorama/azureleveldown/issues"
@@ -28,7 +33,7 @@
   "homepage": "https://github.com/richorama/azureleveldown",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./test.js"
   },
   "author": "richard.astbury"
 }

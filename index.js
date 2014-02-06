@@ -80,8 +80,14 @@ AzureIterator.prototype._next = function (callback) {
 
 // location is a connection string
 function AzureDown (location, settingsOverride) {
-  if (!(this instanceof AzureDown))
-    return new AzureDown(location)
+  if (!(this instanceof AzureDown)){
+    return new AzureDown(location);
+  }
+
+  if (!location){
+    throw new Error("constructor requires at least a location argument");
+  }
+
   this.tableService = azure.createTableService(location);
 
   var settings = {
