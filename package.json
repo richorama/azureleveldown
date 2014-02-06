@@ -31,7 +31,6 @@
     "url": "https://github.com/richorama/azureleveldown/issues"
   },
   "homepage": "https://github.com/richorama/azureleveldown",
-  "devDependencies": {},
   "scripts": {
     "test": "node ./test.js"
   },
